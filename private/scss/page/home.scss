@@ -2,6 +2,12 @@
 
 .mod {
   position: relative;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   &.home,
   canvas.particles-js-canvas-el {
@@ -9,10 +15,25 @@
     height: 600px;
   }
 
+  &:hover {
+   & >.home-intro {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+   }
+  }
+
   canvas.particles-js-canvas-el {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
     position: absolute;
     top: 0;
     left: 0;
+    transition: all 150ms linear;
+  
+    &:hover {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+    }
   }
 
   &.home {
@@ -24,5 +45,32 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#5193C9', endColorstr='#2491D0' ,GradientType=0)";
     background : linear-gradient(180deg, rgba(81, 147, 201, 1) 0%, rgba(64, 146, 203, 1) 47.5%, rgba(36, 145, 208, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5193C9',endColorstr='#2491D0' , GradientType=0);
+  }
+
+  .home-intro:hover + canvas.particles-js-canvas-el {
+
+  }
+
+  .home-intro {
+    display: inline-block;
+    list-style: none;
+    z-index: 999;
+    transition: all 150ms linear;
+
+    &:hover {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      & + canvas.particles-js-canvas-el {
+        -webkit-filter: blur(1px);
+        filter: blur(1px);
+      }
+    }
+
+    li {
+      &:nth-of-type(1) {
+        margin-right: 10px;
+      }
+      display: inline-block;
+    }
   }
 }

@@ -24,6 +24,58 @@ body {
   margin: 0;
 }
 
+.icn, .icn-before:before, .icn-after:after {
+  background-image: url(/images/develonaut_sprite_sheet.svg);
+  background-color: transparent;
+}
+
+.icn-before:before, .icn-after:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo {
+  z-index: 999;
+
+  &.woo-hoo{
+    animation:spin 0.5s linear;
+  }
+
+  &:before {
+    background-position: 0 0;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.typeface {
+  &:before {
+    background-position: -105px -22px;
+    width: 341px;
+    height: 32px;
+  }
+}
+
+.nav {
+  padding: 10px;
+
+  ul {
+    list-style: none;
+    
+    .typeface {
+      position: relative;
+      left: 0;
+      top: 0;
+      transform: scale(0.5);
+    }
+  }
+}
+
 .hidden {
   display: none !important;
 }
