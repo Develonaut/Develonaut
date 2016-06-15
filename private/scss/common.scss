@@ -1,5 +1,6 @@
 // utility imports i.e colors/fonts
 @import "normalize";
+@import "colors";
 
 html, * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,12 +25,6 @@ body {
 
 .hidden {
   display: none !important;
-}
-
-.disabled {
-  opacity: 0.35 !important;
-  pointer-events: none !important;
-  cursor: default !important;  
 }
 
 .flex {
@@ -60,4 +55,8 @@ body {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+}
+
+.site-wrapper {
+  padding: 7px;
 }

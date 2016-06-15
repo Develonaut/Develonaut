@@ -1,0 +1,20 @@
+@import "../common";
+
+.mod {
+  &.home,
+  .particles-js-canvas-el {
+    width: 100%;
+    height: 600px;
+  }
+
+  &.home {
+     background : -moz-linear-gradient(50% 9% -90deg,rgba(81, 147, 201, 1) 0%,rgba(64, 146, 203, 1) 47.5%,rgba(36, 145, 208, 1) 100%);
+    background : -webkit-linear-gradient(-90deg, rgba(81, 147, 201, 1) 0%, rgba(64, 146, 203, 1) 47.5%, rgba(36, 145, 208, 1) 100%);
+    background : -webkit-gradient(linear,50% 9% ,50% 90.66% ,color-stop(0,rgba(81, 147, 201, 1) ),color-stop(0.475,rgba(64, 146, 203, 1) ),color-stop(1,rgba(36, 145, 208, 1) ));
+    background : -o-linear-gradient(-90deg, rgba(81, 147, 201, 1) 0%, rgba(64, 146, 203, 1) 47.5%, rgba(36, 145, 208, 1) 100%);
+    background : -ms-linear-gradient(-90deg, rgba(81, 147, 201, 1) 0%, rgba(64, 146, 203, 1) 47.5%, rgba(36, 145, 208, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#5193C9', endColorstr='#2491D0' ,GradientType=0)";
+    background : linear-gradient(180deg, rgba(81, 147, 201, 1) 0%, rgba(64, 146, 203, 1) 47.5%, rgba(36, 145, 208, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5193C9',endColorstr='#2491D0' , GradientType=0);
+  }
+}

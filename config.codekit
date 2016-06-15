@@ -35,6 +35,33 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/private\/css\/colors.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/private\/css\/colors.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/private\/css\/common.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/private\/css\/common.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/private\/css\/normalize.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/private\/css\/normalize.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/private\/js\/client\/master.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -56,6 +83,28 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/private\/js\/client\/utils\/particles.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/private\/js\/client\/utils\/particles.min.js",
+		"outputAbbreviatedPath": "\/private\/js\/client\/utils\/min\/particles.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/private\/js\/client\/utils\/particlesjs-config.json": {
+		"fileType": 524288,
+		"ignore": 0,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/private\/js\/client\/utils\/particlesjs-config.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/public\/js\/utils\/particlesjs-config-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1
 		},
 	"\/private\/js\/client\/utils\/underscore-min.js": {
 		"fileType": 64,
@@ -101,6 +150,22 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/private\/scss\/colors.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/private\/scss\/colors.scss",
+		"outputAbbreviatedPath": "\/private\/css\/colors.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/private\/scss\/common.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -128,7 +193,7 @@
 		"outputAbbreviatedPath": "\/private\/css\/normalize.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
@@ -466,6 +531,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/public\/js\/utils\/particlesjs-config-min.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/utils\/particlesjs-config-min.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/public\/js\/utils\/particlesjs-config-min-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/public\/js\/vendor\/vendor-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -566,6 +642,12 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/private\/js\/client\/master.js",
 			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/private\/js\/client\/utils\/particles.min.js",
+			"position": 1,
 			"type": 0
 			}
 		]
