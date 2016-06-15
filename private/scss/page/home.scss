@@ -1,10 +1,18 @@
 @import "../common";
 
 .mod {
+  position: relative;
+
   &.home,
-  .particles-js-canvas-el {
+  canvas.particles-js-canvas-el {
     width: 100%;
     height: 600px;
+  }
+
+  canvas.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &.home {
