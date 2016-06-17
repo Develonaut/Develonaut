@@ -1,9 +1,22 @@
-<section  class="mod flex {{#if mod_name}}{{mod_name}}{{/if}}" 
-          data-role="mod" id="particles-js"  
+<section  class="mod flex flex-column {{#if mod_name}}{{mod_name}}{{/if}}" 
+          data-role="mod"  
           {{#if data_conf}}data-conf="{{data_conf}}"{{/if}}>
 
-  <ul class="home-intro flex flex-item">
-      <li class="logo icn-before" data-role="logo"></li>
-      <li class="typeface icn-before"></li>
-  </ul>
+  <section class="intro flex flex-item-grow" id="particles-js">
+    <ul class="logo-wrapper flex flex-item-base">
+        <li class="logo icn-before" data-role="logo"></li>
+        <li class="typeface icn-before" data-role="typeface"></li>
+    </ul>
+  </section>
+
+  <section class="current-projects flex flex-item-grow">
+    <ul class="project-list flex flex-item-grow">
+      <li class="project flex-item-grow"></li>
+      <li class="project flex-item-grow"></li>
+      <li class="project flex-item-grow"></li>
+      <li class="project flex-item-grow"></li>
+      <li class="project flex-item-grow"></li>
+      <li class="project flex-item-grow"></li>
+    </ul>
+  </section>
 </section>

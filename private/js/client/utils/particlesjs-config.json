@@ -4,7 +4,7 @@
       "value": 100,
       "density": {
         "enable": true,
-        "value_area": 880
+        "value_area": 600
       }
     },
     "color": {
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 4,
+      "value": 5,
       "random": true,
       "anim": {
         "enable": false,
@@ -68,7 +68,7 @@
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": false,
