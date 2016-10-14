@@ -21,6 +21,17 @@ app.use(cookieParser());
 // Defines where we can load in partials from for 
 // Handlebars
 hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerHelper('debug', function(optionaValue) {
+  console.log("Current Context");
+  console.log("====================");
+  console.log(this);
+
+  if (optionalValue) {
+    console.log("Value");
+    console.log("====================");
+    console.log(optionalValue);
+  }
+});
 
 // Route Set UP
 // Define route files

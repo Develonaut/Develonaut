@@ -10,13 +10,24 @@
   </section>
 
   <section class="current-projects flex flex-item-grow">
-    <ul class="project-list flex flex-item-grow">
-      <li class="project flex-item-grow"></li>
-      <li class="project flex-item-grow"></li>
-      <li class="project flex-item-grow"></li>
-      <li class="project flex-item-grow"></li>
-      <li class="project flex-item-grow"></li>
-      <li class="project flex-item-grow"></li>
-    </ul>
+      {{#if data.posts}}
+          {{#each data.posts}}
+                {{#if this.photos}}
+                  {{#each this.photos}}
+                    {{#if this.alt_sizes}}
+                      <div class="project flex-item-grow" style="height: {{this.alt_sizes.[2].height}}px; width: {{this.alt_sizes.[2].width}}px;">
+                      <div class="overlay">
+                        <span class="caption-drawer-opener icn-after" data-role="caption_drawer_opener"></span>
+                        <div class="caption-drawer collapsed" data-role="caption_drawer">
+                        {{../../this.summary}}
+                      </div>
+                      </div>
+                      <img src="{{this.alt_sizes.[2].url}}">
+                      </div>
+                    {{/if}}
+                  {{/each}}
+                {{/if}}
+          {{/each}}
+      {{/if}}
   </section>
 </section>

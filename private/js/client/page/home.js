@@ -12,11 +12,38 @@ function initHomePage (e) {
       canvas = null,
       mod = page.querySelector("[data-role=mod]"),
       logo = page.querySelector("[data-role=logo]"),
-      typeface = page.querySelector("[data-role=typeface]");
+      typeface = page.querySelector("[data-role=typeface]"),
+      caption_opener = page.querySelectorAll("[data-role=caption_drawer_opener]"),
+      caption_drawer = page.querySelector("[data-role=caption_drawer]");
 
   loadParticles();
+  loadMasonry();
   logo.addEventListener("click", addWooHoo);
   typeface.addEventListener("click", cancelClick);
+  caption_opener.addEventListener("click", openDrawer.bind(caption_opener, caption_drawer));
+}
+
+function openDrawer (drawer) {
+  var self = this;
+  drawer.classList.toggle("expanded");
+  self.classList.toggle("expanded");
+}
+
+function loadMasonry () {
+  // vanilla JS
+  // init with element
+  var grid = document.querySelector('.current-projects');
+  var msnry = new Masonry( grid, {
+    // options...
+    itemSelector: '.project',
+    columnWidth: '.project',
+    fitWidth: true
+  });
+
+  imagesLoaded( grid ).on( 'progress', function() {
+    // layout Masonry after each image loads
+    msnry.layout();
+  });
 }
 
 function cancelClick (e) {

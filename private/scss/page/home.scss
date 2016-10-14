@@ -110,26 +110,95 @@
     }
 
     .current-projects {
-      width: 100%;
       top: -10%;
-      max-width: 1280px;
       position: relative;
-    
-      .project-list {
-        width: 100%;
-        list-style: none;
-        padding: 0 30px;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+      margin: 0 auto;   
       
         .project {
-          min-width: 250px;
-          min-height: 400px;
-          background: grey;
-          border: 2px solid white;        }
+          overflow: hidden;
+          max-width: 400%;
 
-      }
+          .overlay {
+            z-index: 998;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            padding: 10px;
+            overflow: hidden;
+            display: block;
+            background-image: url("/images/dark.png");
+            opacity: 0;
+            -webkit-transition: all .15s ease-in-out;
+            -moz-transition: all .15s ease-in-out;
+            -o-transition: all .15s ease-in-out;
+            -ms-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
+            cursor: pointer;
+          
+            .caption-drawer-opener {
+              position: absolute;
+              bottom: 15px;
+              right: 15px;
+              -webkit-transition: all .15s ease-in-out;
+              -moz-transition: all .15s ease-in-out;
+              -o-transition: all .15s ease-in-out;
+              -ms-transition: all .15s ease-in-out;
+              transition: all .15s ease-in-out;
+              z-index: 999;
+
+              &.expanded {
+                bottom: 90px
+              }
+
+              &.icn-after:after {
+                content: '+';
+                display: inline-block;
+                position: relative;
+                font-size: 22px;
+                color: white;
+                cursor: pointer;
+                background-image: none;
+              }
+            }
+
+            .caption-drawer {
+              position: absolute;
+              left: 15px;
+              right: 15px;
+              bottom: -90px;
+              overflow: hidden;
+              display: block;
+              color: white;
+              overflow: hidden;
+              -webkit-transition: all .15s ease-in-out;
+              -moz-transition: all .15s ease-in-out;
+              -o-transition: all .15s ease-in-out;
+              -ms-transition: all .15s ease-in-out;
+              transition: all .15s ease-in-out;
+              height: 90px;
+              
+              &.expanded {
+                bottom: 15px;
+              }
+            }
+          }
+
+          &:hover {
+
+            .overlay {
+              opacity: 1;
+            }
+
+          }
+
+          img {
+            width: 100%;
+            display: block;
+          }       
+             
+        }
 
     }
 }
